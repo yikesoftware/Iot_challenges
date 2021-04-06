@@ -1,0 +1,25 @@
+GET /index.html HTTP/1.1
+Host: 127.0.0.1:10000
+User-Agent: curl/7.68.0
+Accept: */*
+
+
+
+path to resource: 0xffff59f8
+
+0xffffa818
+
+
+
+GET /test.html HTTP/1.1
+Host: 127.0.0.1:2333
+User-Agent: curl/7.68.0
+Accept: */*
+
+
+
+Connection received on 127.0.0.1 48426
+post /upload.cgi HTTP/1.1
+Host: 127.0.0.1:10000
+User-Agent: curl/7.68.0
+Accept: */*

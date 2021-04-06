@@ -1,0 +1,11 @@
+set architecture mips:isa64
+file lib/libc.so.0
+file lib/ld64-uClibc.so.0
+file httpd
+target remote 127.0.0.1:1234
+b *0x40000032f0
+b *0x4000003310
+b *0x4000830000+0x5d9dc
+#b *0x4000002114
+c
+#x/200gx 0x40008f5260

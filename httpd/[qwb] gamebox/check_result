@@ -1,0 +1,9 @@
+[!] Did not find any GOT entries
+[*] '/home/eqqie/CTF/IoT/game/httpd'
+    Arch:     mips64-64-big
+    RELRO:    No RELRO
+    Stack:    No canary found
+    NX:       NX enabled
+    PIE:      PIE enabled
+    
+httpd: ELF 64-bit MSB shared object, MIPS, MIPS64 version 1 (SYSV), dynamically linked, interpreter /lib/ld64-uClibc.so.0, stripped
