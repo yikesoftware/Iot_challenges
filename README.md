@@ -45,9 +45,9 @@ No. [赛事] 题目
    - 请求D：同样进入`AIO::read`的逻辑，借助一个合适大小的buffer拿到`__free_hook-0x10`，写入参数和`system`地址
    - 当请求D被完成，buffer被free后就可以getshell了
    
-4. [RWCTF] Game2048
+4. [qwb] qwbhttpd
 
-   详细分析和利用：
+   分析&利用：
    - 博客：[[强网杯 Final 2021] 固件题 qwbhttpd 解题思路](https://eqqie.cn/index.php/laji_note/1694/)
 
 ## Protocol
