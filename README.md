@@ -28,7 +28,7 @@ No. [赛事] 题目
    - 溢出后需要EOF截断输入，不能leak，需要结合已知地址构造rop
    - 单字符拼接文件名，栈迁移调用`do_file`实现任意文件读
    
-2. [RWCTF] Game2048
+3. [RWCTF] Game2048
 
    分析：
    - 使用了协程库，可以并行处理多个HTTP请求
@@ -44,5 +44,10 @@ No. [赛事] 题目
    - 请求C：尝试修改fd即可指向`__free_hook-0x10` (C++对象创建和销毁操作比较多，不当的操作很容易crash，只能慢慢试)
    - 请求D：同样进入`AIO::read`的逻辑，借助一个合适大小的buffer拿到`__free_hook-0x10`，写入参数和`system`地址
    - 当请求D被完成，buffer被free后就可以getshell了
+   
+4. [RWCTF] Game2048
+
+   详细分析和利用：
+   - 博客：[[强网杯 Final 2021] 固件题 qwbhttpd 解题思路](https://eqqie.cn/index.php/laji_note/1694/)
 
 ## Protocol

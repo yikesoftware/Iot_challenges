@@ -1,0 +1,21 @@
+set architecture mips
+target remote 127.0.0.1:1234
+file ./qwbhttpd
+
+b *0x7ffe6000+0x1290
+#b *0x7ffe6000+0x12b8
+#b *0x7ffe72b8
+b *0x7ffe7170
+
+# gadget
+# b *0x7ffe6000+0x3820
+b *0x7ffe6000+0x83F0
+
+# function
+#b *0x7ffe6000+0x1d24
+b *0x7ffe7188
+
+# one_gadget
+#b *0x7f713000+0x389E0
+
+c
