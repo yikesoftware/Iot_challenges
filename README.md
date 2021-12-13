@@ -48,6 +48,11 @@ No. [赛事] 题目
 4. [qwb] qwbhttpd
 
    分析&利用：
-   - 博客：[[强网杯 Final 2021] 固件题 qwbhttpd 解题思路](https://eqqie.cn/index.php/laji_note/1694/)
+   - 博客：[[强网杯 Final 2021] 固件题 qwbhttpd 解题思路](https://eqqie.cn/index.php/archives/1694)
+
+5. [ByteCTF] Master of HTTPD
+
+   分析&利用：
+   - 博客：[[ByteCTF 2021 Final] Master of HTTPD && exsc 题解](https://eqqie.cn/index.php/archives/1888)
 
 ## Protocol

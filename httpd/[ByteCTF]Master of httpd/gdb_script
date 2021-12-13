@@ -1,0 +1,9 @@
+set architecture aarch64
+target remote 127.0.0.1:1234
+file ./mini_httpd
+
+b *0x4046f8
+
+b *0x407D9C
+
+c
